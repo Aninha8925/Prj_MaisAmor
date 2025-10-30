@@ -12,31 +12,25 @@ nav {
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: space-between; /* 👈 altera de center pra space-between */
-    align-items: center; /* 👈 centraliza verticalmente */
+    justify-content:space-between; 
     gap: 40px;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*Não fiz na mão, peguei do site: https://getcssscan.com/*/
     position: sticky;
     top: 0;
     background-color: white;
-    padding: 0; /* 👈 dá espaçamento interno pros lados */
 }
 
-#imgLogo {
-    display: flex;
-    align-items: center;
+nav img {
     margin-left: 50px;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
-    justify-content: center;
-    flex: 1; /* 👈 ocupa o espaço central */
+    margin-right: 100px;
 }
-
 
 nav a {
       text-decoration: none;
