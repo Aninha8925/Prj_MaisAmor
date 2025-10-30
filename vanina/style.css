@@ -12,25 +12,29 @@ nav {
     width: 100%;
     height: auto; /* Altura automática */
     display: flex;
-    justify-content:space-between; 
-    gap: 40px;
+    justify-content: space-between;
+    align-items: center;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; /*Não fiz na mão, peguei do site: https://getcssscan.com/*/
     position: sticky;
     top: 0;
     background-color: white;
+    padding: 0;
 }
 
-nav img {
-    margin-left: 50px;
+#imgLogo {
+   display: flex;
+   align-items: center;
+   margin-left: 10px;
 }
 
 nav ul {
     display: flex;
     list-style-type: none;
-    gap: 20px;
+    gap: 30px;
     align-items: center;
-    margin-right: 100px;
-}
+    justify-content: center;
+    flex: 1;
+}  
 
 nav a {
       text-decoration: none;
