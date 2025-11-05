@@ -1,29 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/LogoAntiga.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="img/LogoAntiga.ico" type="image/x-icon" />
     <title>ONG mais amor</title>
-</head>
-<body>
+  </head>
+  <body>
     <nav>
+      <img src="img/LogoAntiga.png" alt="" width="100" height="98" />
 
-        <img src="img/LogoAntiga.png" alt="" width="100" height="98">
-
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Pets</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Apoiadores</a></li>
-            <li><a href="#transparencia">Transparência</a></li>
-            <li><a href="#">Contato</a></li>
-        </ul>
-
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pets</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Apoiadores</a></li>
+        <li><a href="#transparencia">Transparência</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
     </nav>
 
-<!-- Transparencia -->
+    <!-- Carrossel -->
+    <div class="carousel">
+      <div class="slides">
+        <div class="slide">
+          <div class="text-box">
+            <h2>ONG MAIS AMOR</h2>
+            <p>
+              Na Baixada Santista, resgatamos e cuidamos de cães e gatos
+              abandonados, oferecendo abrigo, tratamento e um novo lar cheio de
+              <strong>amor.</strong><br />
+              Juntos, podemos transformar vidas!
+            </p>
+          </div>
+          <img src="img/gato.jpg" alt="Cachorrinho" />
+        </div>
+        <div class="slide">
+          <div class="text-box">
+            <h2>ADOÇÃO RESPONSÁVEL</h2>
+            <p>
+              Incentivamos a adoção consciente de animais, garantindo que cada
+              pet encontre uma família preparada para oferecer cuidado e
+              carinho.
+            </p>
+          </div>
+          <img src="img/gato.jpg" alt="Adoção" />
+        </div>
+        <div class="slide">
+          <div class="text-box">
+            <h2>AJUDE NOSSA CAUSA</h2>
+            <p>
+              Sua doação faz a diferença! Contribua com ração, medicamentos ou
+              qualquer valor para mantermos nossos resgates ativos.
+            </p>
+          </div>
+          <img src="img/gato.jpg" alt="Doação" />
+        </div>
+      </div>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </div>
+
+    <!-- Transparencia -->
     <div id="transparencia">
         <section class="transparencia"> 
             <h2>Transparência</h2>
@@ -54,17 +96,17 @@
                 <input type="range" class="adm" value="5">
             </section>
 
-            <div id="donates">
-                <section class="donates">
-                    <h3>100%</h3>
-                    <p> das doações recebidas, vão para os animais e seus cuidados </p>
-                </section>
+          <div id="donates">
+            <section class="donates">
+              <h3>100%</h3>
+              <p>das doações recebidas, vão para os animais e seus cuidados</p>
+            </section>
 
-                <section class="donates">
-                    <h3>5⭐</h3>
-                    <p>É como somos avaliados pelos nossos apoiadores</p>
-                </section>
-            </div>
+            <section class="donates">
+              <h3>5⭐</h3>
+              <p>É como somos avaliados pelos nossos apoiadores</p>
+            </section>
+          </div>
 
             <section id="impacto-anual"> 
                 <h2>Impacto anual</h2>
@@ -93,6 +135,35 @@
                 <p>acreditamos na total transparência. Veja exatamente como suas doações são usadas para causar o maior impacto nos animais necessitados:</p>
             </section>
         </section>    
-    </div> 
-</body>
+    </div>
+
+    <script>
+      const slides = document.querySelector(".slides");
+      const dots = document.querySelectorAll(".dot");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        if (index >= dots.length) currentIndex = 0;
+        if (index < 0) currentIndex = dots.length - 1;
+        slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+        dots.forEach((dot, i) =>
+          dot.classList.toggle("active", i === currentIndex)
+        );
+      }
+
+      function nextSlide() {
+        currentIndex++;
+        showSlide(currentIndex);
+      }
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener("click", () => {
+          currentIndex = index;
+          showSlide(currentIndex);
+        });
+      });
+
+      setInterval(nextSlide, 6000); // 6 seconds interval
+    </script>
+  </body>
 </html>
