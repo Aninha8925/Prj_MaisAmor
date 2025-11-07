@@ -242,10 +242,14 @@ footer #contact{
     padding-left: 0;
 }
 
-footer .links{
+footer ul{
     text-align: left;
     padding-left: 0;
+    list-style: none;
+    margin-bottom: 40px;
+    
 }
+
 
 footer .flex2 {
     display: flex;
@@ -261,4 +265,12 @@ footer .flex2 {
 
 footer a {
     text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+   
 }
+
+footer li {
+     margin-bottom: 16px;
+}
+
