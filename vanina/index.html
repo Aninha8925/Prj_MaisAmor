@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-    <meta charset="UTF-8" / />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" / />
-    <link rel="stylesheet" href="style.css" / />
-    <link rel="shortcut icon" href="img/LogoAntiga.ico" type="image/x-icon" / />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="style.css"  />
+    <link rel="shortcut icon" href="img/LogoAntiga.ico" type="image/x-icon" />
     <title>ONG mais amor</title>
     </head>
     <body>
@@ -13,7 +13,7 @@
 
       <ul>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Pets</a></li>
+        <li><a href="#adote">Pets</a></li>
         <li><a href="#">Sobre</a></li>
         <li><a href="#">Apoiadores</a></li>
         <li><a href="#transparencia">Transparência</a></li>
@@ -64,6 +64,98 @@
         <span class="dot"></span>
       </div>
     </div>
+
+    <section id="adote">
+  <h2>Pets para adoção</h2>
+
+  <div class="carrosselPet">
+    <button class="btnPrevPet" aria-label="Anterior" type="button"><</button>
+
+    <div class="janelaPet" id="janelaPet">
+      <div class="listaPet">
+        
+        <article class="cardPet">
+          <div class="imgPet">
+            <img src="img/adriano_gato.jpg" alt="Gato para adoção: Adriano" />
+          </div>
+          <div class="infoPet">
+            <div class="nomeIdadePet">
+            <h3>Adriano</h3>
+            <p>3 anos</p>
+          </div>
+          <p class="racaPet">SRD</p>
+          <p class="sexoPet">Macho</p>
+          </div>
+          <button class="btnAdotarPet" type="button">QUERO ADOTAR</button>
+        </article>
+
+        <article class="cardPet">
+          <div class="imgPet">
+            <img src="img/dudinha_gato.jpg" alt="Gato para adoção: Adriano" />
+          </div>          
+          <div class="infoPet">
+           <div class="nomeIdadePet">
+            <h3>Dudinha</h3>
+            <p>2 anos</p>
+          </div>
+          <p class="racaPet">SRD</p>
+          <p class="sexoPet">Fêmea</p>
+         </div>
+          <button class="btnAdotarPet" type="button">QUERO ADOTAR</button>
+        </article>
+
+        <article class="cardPet">
+          <div class="imgPet">
+            <img src="img/pretinha_cachorro.jpg" alt="Gato para adoção: Adriano" />
+          </div>          
+          <div class="infoPet">
+            <div class="nomeIdadePet">
+            <h3>Pretinha</h3>
+            <p>3 anos</p>
+          </div>
+          <p class="racaPet">SRD</p>
+          <p class="sexoPet">Fêmea</p>
+          </div>
+          <button class="btnAdotarPet" type="button">QUERO ADOTAR</button>
+        </article>
+
+        <article class="cardPet">
+          <div class="imgPet">
+            <img src="img/rubi_gato.jpg" alt="Gato para adoção: Adriano" />
+          </div>          
+          <div class="infoPet">
+            <div class="nomeIdadePet">
+            <h3>Rubi</h3>
+            <p>1 anos</p>
+          </div>
+          <p class="racaPet">SRD</p>
+          <p class="sexoPet">Fêmea</p>
+          </div>
+          <button class="btnAdotarPet" type="button">QUERO ADOTAR</button>
+        </article>
+
+        <article class="cardPet">
+            <div class="imgPet">
+            <img src="img/filhote_cachorro.jpg" alt="Gato para adoção: Adriano" />
+          </div>         
+          <div class="infoPet">
+            <div class="nomeIdadePet">
+            <h3>Filhote</h3>
+            <p>5 meses</p>
+          </div>
+          <p class="racaPet">SRD</p>
+          <p class="sexoPet">Macho</p>
+           </div>
+          <button class="btnAdotarPet" type="button">QUERO ADOTAR</button>
+        </article>
+
+        
+      </div>
+    </div>
+
+    <button class="btnNextPet" aria-label="Próximo" type="button">></button>
+  </div>
+</section>
 
     <!-- Transparencia -->
     <div id="transparencia">
@@ -165,5 +257,7 @@
 
       setInterval(nextSlide, 6000); // 6 seconds interval
     </script>
+    <script src="pets.js"></script>
+
   </body>
 </html>
