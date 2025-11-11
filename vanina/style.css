@@ -1,3 +1,92 @@
+.transparencia #grupo-transparencia-flex {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 32px;
+}
+
+#grupo-cards-fantasma,
+#impacto-anual {
+  min-width: 320px;
+  max-width: 480px;
+  flex: 1 1 340px;
+  display: flex;
+  flex-direction: column;
+}
+
+.transparencia #grupo-transparencia-flex {
+  align-items: stretch;
+}
+
+/* Igualar altura das colunas lado a lado usando grid para simetria perfeita */
+.transparencia #grupo-transparencia-flex {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 1100px) {
+  .transparencia #grupo-transparencia-flex {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .transparencia #grupo-transparencia-flex {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+  }
+  #grupo-cards-fantasma, #impacto-anual {
+    max-width: 98vw;
+    width: 100%;
+  }
+}
+.transparencia{
+  width: min(1200px, 98vw);
+  margin: 24px auto;
+  padding: 32px 32px 24px 32px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: #fcd5d7;
+  display: block;
+}
+
+/* Grupos voltam ao fluxo vertical padrão */
+#grupo-fundos-donates {
+  margin-bottom: 32px;
+}
+
+#donates {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-top: 28px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.donates {
+  width: 100%;
+  max-width: 260px;
+  min-width: 0;
+  flex: 1 1 0;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  #donates {
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  .donates {
+    max-width: 100%;
+  }
+}
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -50,15 +139,9 @@ h2 {
 input[type="range"]{
     pointer-events: none;
     touch-action: none; 
-    width: 70%;
+    width: 100%;
     height: 30px;
  
-}
-
-
-
-#transparencia{
-    margin-left: 10px;
 }
 
 #transparencia h3, #transparencia p{
@@ -70,16 +153,16 @@ section{
     padding: 6px;
     width: 40%;
     border-style: none;
-    box-shadow: rgba(87, 87, 96, 0.2) 0px 7px 29px 0px;
+    box-shadow: rgba(17, 17, 19, 0.2) 0px 7px 29px 0px;
 
 }
 
 .feed{
-    accent-color: #5d0000;
+    accent-color: #ff0000;
 }   
 
 .medcare{
-    accent-color: #e74d00;
+    accent-color: #b75727;
 }
 
 .program{
@@ -87,13 +170,15 @@ section{
 }
 
 .adm{
-    accent-color: #4d4d4d;
+    accent-color: #8c00af;
 }
 
 .info-graphic{
     display: flex;
     justify-content: space-between;
     margin-right: 30%;
+    align-items: center;
+    text-align: center;
 }
 
 input[type="range"]::-moz-range-thumb{
@@ -114,39 +199,74 @@ input[type="range"]::-webkit-slider-thumb{
 
 #donates{
     display: flex
-    
 }
 
 .transparencia{
-    width: max-content;
-    height: max-content;
-    justify-content: center;
-    margin-left: 23%;
-    border-radius: 40px;
-    background-color: #fcd5d7;
+  width: min(900px, 90vw);
+  margin: 20px auto;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  background-color: #fcd5d7;
+  display: block;
+}
+#grupo-cards-fantasma{
+  align-items: center;
+}
+
+
+#graphic .info-graphic {
+  width: 100%;
 }
 
 .transparencia section{
     background-color: white;
-    justify-content: center;
-    margin-left: 30px;
-    align-items: center;
+    margin: 0;
+    border-radius: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
 }
 
 #transparencia section{
-    border-radius: 30px;
+    border-radius: 12px;
     justify-content: center;
 }
 
+
 #impacto-anual {
-  justify-items: center;
-  align-items: center;
+  width: min(720px, 90%);
   text-align: center;
-  gap: 20px;
 }
 
-#impacto-anual h3 {
-  margin: 5px 0;
+#impacto-anual h2 {
+  margin: 5px 0 12px;
+}
+
+#donates-graphic{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+/* Grid interno que contém as 4 métricas (2x2) */
+#impacto-itens {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* Estilo das caixas individuais */
+#impacto-itens > .impacto-item {
+  background: #ffffff;
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: rgba(18, 18, 20, 0.08) 0px 6px 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
 }
 .carousel {
   position: relative;

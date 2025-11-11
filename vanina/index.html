@@ -1,100 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="img/LogoAntiga.ico" type="image/x-icon" />
-    <title>ONG mais amor</title>
-  </head>
-  <body>
-    <nav>
-      <img src="img/LogoAntiga.png" alt="" width="100" height="98" />
 
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Pets</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Apoiadores</a></li>
-        <li><a href="#transparencia">Transparência</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="img/LogoAntiga.ico" type="image/x-icon" />
+  <title>ONG mais amor</title>
+</head>
 
-    <!-- Carrossel -->
-    <div class="carousel">
-      <div class="slides">
-        <div class="slide">
-          <div class="text-box">
-            <h2>ONG MAIS AMOR</h2>
-            <p>
-              Na Baixada Santista, resgatamos e cuidamos de cães e gatos
-              abandonados, oferecendo abrigo, tratamento e um novo lar cheio de
-              <strong>amor.</strong><br />
-              Juntos, podemos transformar vidas!
-            </p>
-          </div>
-          <img src="img/gato.jpg" alt="Cachorrinho" />
+<body>
+  <nav>
+    <img src="img/LogoAntiga.png" alt="" width="100" height="98" />
+
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Pets</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Apoiadores</a></li>
+      <li><a href="#transparencia">Transparência</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <!-- Carrossel -->
+  <div class="carousel">
+    <div class="slides">
+      <div class="slide">
+        <div class="text-box">
+          <h2>ONG MAIS AMOR</h2>
+          <p>
+            Na Baixada Santista, resgatamos e cuidamos de cães e gatos
+            abandonados, oferecendo abrigo, tratamento e um novo lar cheio de
+            <strong>amor.</strong><br />
+            Juntos, podemos transformar vidas!
+          </p>
         </div>
-        <div class="slide">
-          <div class="text-box">
-            <h2>ADOÇÃO RESPONSÁVEL</h2>
-            <p>
-              Incentivamos a adoção consciente de animais, garantindo que cada
-              pet encontre uma família preparada para oferecer cuidado e
-              carinho.
-            </p>
-          </div>
-          <img src="img/gato.jpg" alt="Adoção" />
-        </div>
-        <div class="slide">
-          <div class="text-box">
-            <h2>AJUDE NOSSA CAUSA</h2>
-            <p>
-              Sua doação faz a diferença! Contribua com ração, medicamentos ou
-              qualquer valor para mantermos nossos resgates ativos.
-            </p>
-          </div>
-          <img src="img/gato.jpg" alt="Doação" />
-        </div>
+        <img src="img/gato.jpg" alt="Cachorrinho" />
       </div>
-      <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+      <div class="slide">
+        <div class="text-box">
+          <h2>ADOÇÃO RESPONSÁVEL</h2>
+          <p>
+            Incentivamos a adoção consciente de animais, garantindo que cada
+            pet encontre uma família preparada para oferecer cuidado e
+            carinho.
+          </p>
+        </div>
+        <img src="img/gato.jpg" alt="Adoção" />
+      </div>
+      <div class="slide">
+        <div class="text-box">
+          <h2>AJUDE NOSSA CAUSA</h2>
+          <p>
+            Sua doação faz a diferença! Contribua com ração, medicamentos ou
+            qualquer valor para mantermos nossos resgates ativos.
+          </p>
+        </div>
+        <img src="img/gato.jpg" alt="Doação" />
       </div>
     </div>
+    <div class="dots">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
 
-    <!-- Transparencia -->
-    <div id="transparencia">
-        <section class="transparencia"> 
-            <h2>Transparência</h2>
-            <section id="graphic">
-                <h3>Fundos</h3>
-                <div class="info-graphic">
-                    <p> 🔴 Alimentação: </p>
-                    <p>65% </p>
-                </div>
-                <input type="range" class="feed" value="65">
-                <br>
-                <div class="info-graphic">
-                    <p>🟠 Cuidados e Medicamentos: </p>
-                    <p>20% </p>
-                </div>
-                <input type="range" class="medcare" value="20">
-                <br>
-                <div class="info-graphic">
-                    <p>🟢 Programas Comunitários: </p>
-                    <p>10% </p>
-                </div>
-                <input type="range" class="program" value="10">
-                <br>
-                <div class="info-graphic">
-                    <p>🩶 Administrativo: </p>
-                    <p>5% </p>
-                </div>
-                <input type="range" class="adm" value="5">
-            </section>
+  <!-- Transparencia -->
+  <div id="transparencia">
+    <section class="transparencia">
+      <h2>Transparência</h2>
+      <div id="grupo-transparencia-flex"
+        style="display: flex; gap: 40px; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+        <section id="grupo-cards-fantasma"
+          style="background:transparent;box-shadow:none;padding:0;margin:0;border:none; min-width:320px; flex:1 1 340px; max-width:480px;">
+          <section id="graphic">
+            <h3>Fundos</h3>
+            <div class="info-graphic">
+              <p> 🔴 Alimentação: </p>
+              <p> 65% </p>
+            </div>
+            <input type="range" class="feed" value="65">
+            <br>
+            <div class="info-graphic">
+              <p>🟠 Cuidados e Medicamentos: </p>
+              <p>20% </p>
+            </div>
+            <input type="range" class="medcare" value="20">
+            <br>
+            <div class="info-graphic">
+              <p>🟢 Programas Comunitários: </p>
+              <p>10% </p>
+            </div>
+            <input type="range" class="program" value="10">
+            <br>
+            <div class="info-graphic">
+              <p>🟣 Administrativo: </p>
+              <p>5% </p>
+            </div>
+            <input type="range" class="adm" value="5">
+          </section>
 
           <div id="donates">
             <section class="donates">
@@ -107,37 +113,43 @@
               <p>É como somos avaliados pelos nossos apoiadores</p>
             </section>
           </div>
-
-            <section id="impacto-anual"> 
-                <h2>Impacto anual</h2>
-                <section>
-                    <h3>395</h3>
-                    <p>Animais resgatados</p>
-                </section>
-                
-                <section>
-                    <h3>1000</h3>
-                    <p>adoções bem-sucedidas</p>
-                </section>
-
-                <section>
-                    <h3>98%</h3>
-                    <p>taxa de sucesso</p>                   
-                </section> 
-
-                <section>
-                    <h3>6</h3>  
-                    <p>parceiros da ONG</p>                  
-                </section>
+        </section>
+        <section id="impacto-anual">
+          <h2>Impacto anual</h2>
+          <div id="impacto-itens">
+            <section id="resgatados" class="impacto-item">
+              <h3>395</h3>
+              <p>Animais resgatados</p>
             </section>
 
-            <section id="caption">
-                <p>acreditamos na total transparência. Veja exatamente como suas doações são usadas para causar o maior impacto nos animais necessitados:</p>
+            <section id="adocoes" class="impacto-item">
+              <h3>1000</h3>
+              <p>Adoções bem-sucedidas</p>
             </section>
-        </section>    
-    </div>
+
+            <section id="taxa-sucesso" class="impacto-item">
+              <h3>98%</h3>
+              <p>Taxa de sucesso</p>
+            </section>
+
+            <section id="parceiros" class="impacto-item">
+              <h3>6</h3>
+              <p>Parceiros da ONG</p>
+            </section>
+          </div>
+        </section>
+      </div>
+
+
+      <section id="caption">
+        <p>Acreditamos na total transparência. Veja exatamente como suas doações são usadas para causar o maior impacto
+          nos animais necessitados:</p>
+      </section>
+    </section>
+  </div>
 
     <script>
+      // Carrossel
       const slides = document.querySelector(".slides");
       const dots = document.querySelectorAll(".dot");
       let currentIndex = 0;
@@ -164,6 +176,21 @@
       });
 
       setInterval(nextSlide, 6000); // 6 seconds interval
+
+      function igualarAlturasAbas() {
+        const grupo = document.getElementById('grupo-cards-fantasma');
+        const impacto = document.getElementById('impacto-anual');
+        if (grupo && impacto) {
+          const hGrupo = grupo.offsetHeight;
+          const hImpacto = impacto.offsetHeight;
+          const maior = Math.max(hGrupo, hImpacto);
+          grupo.style.height = maior + 'px';
+          impacto.style.height = maior + 'px';
+        }
+      }
+      window.addEventListener('load', igualarAlturasAbas);
+      window.addEventListener('resize', igualarAlturasAbas);
     </script>
-  </body>
+</body>
+
 </html>
