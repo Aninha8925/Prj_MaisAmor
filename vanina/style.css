@@ -136,6 +136,37 @@ h2 {
     text-align: center;
 }
 
+
+main .qr-code-container{
+    display: flex;
+}
+.qr-code-container{
+    background-image: url('img/FundoPatinhas.png' ), url('img/FundoPatinhas\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color:#ffff;
+      
+}
+.qr-code-item-insta{
+    margin-left: 25%;
+    margin-right: 10%;
+    text-align: center;
+}
+.qr-code-item-whatsaap{
+    margin-right: 25%;
+    text-align: center;
+}
+
+.img-wpp{
+    display: flex;
+}
+.apoiador-descricao{
+    text-align: center;
+}
+.destaqueVerde{
+    color: green;
+}
+
 input[type="range"]{
     pointer-events: none;
     touch-action: none; 
@@ -148,7 +179,7 @@ input[type="range"]{
     text-align: center;
 }
 
-section{
+#transparencia section{
     border: 2px #000;
     padding: 6px;
     width: 40%;
