@@ -896,14 +896,13 @@ main .qr-code-container{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  
+  width: auto;
   font-size: 20px;
   justify-content: center;
   padding: 30px;
   background-color: #E9E9E9;
-    border-radius: 20px;
-    padding: 80px;
-    margin: 60px;
+  border-radius: 20px;
+  margin: 50px 50px 50px 50px;
 }
 
 
