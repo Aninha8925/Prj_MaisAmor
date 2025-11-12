@@ -346,6 +346,132 @@ input[type="range"]::-webkit-slider-thumb{
   background-color: #ff5b2e;
 }
 
+#adote{
+  background-image: url(img/patinhasFundo.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: contain;
+    padding-bottom: 5%;
+    width: 99%;
+}
+#adote h2{
+  padding-top: 15px;
+  font-size: 64px;
+  text-align: center;
+  
+}
+
+
+/* --- Carrossel --- */
+  .carrosselPet{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .btnPrevPet,
+  .btnNextPet{
+    border: none;
+    background: none;
+    width: 44px;
+    height: 44px;
+    font-size: 54px;
+    line-height: 1;
+    color: #8C1F33;
+    cursor: pointer;
+  }
+  .btnPrevPet:disabled,
+  .btnNextPet:disabled{
+    opacity: .2;
+    cursor: not-allowed;
+  }
+
+
+  .janelaPet{
+    overflow: hidden;
+    flex: 1;
+    scroll-behavior: smooth;
+  }
+  .listaPet{
+    display: flex;
+    gap: 10px;              
+  }
+
+  .cardPet{
+    padding: 6px;
+    background-color: #fff;
+    border: 1px solid #7C7575;
+    border-radius: 40px;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;    display: flex;
+    flex-direction: column;
+    flex: 0 0 calc((100% - 70px) / 3);
+    margin-bottom: 10px;
+  }
+
+  .nomeIdadePet h3{
+    font-size: 30px;
+  }
+  .imgPet{
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardPet img{
+    margin-top: 10px;
+    width: 90%;
+    align-items: center;
+    border-radius: 8px;
+    display: block;
+  }
+  .nomeIdadePet{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+  }
+  .nomeIdadePet p{
+    font-size: 15px;
+    font-weight: 700;
+  }
+  .racaPet, .sexoPet { margin: 4px 0; }
+  .btnAdotarPet{
+    margin-top: 8px;
+    background: #8C1F33;
+    border: none;
+    border-radius: 15px;
+    padding: 12px;
+    color: #fff;
+    margin: 15px;
+    cursor: pointer;
+    margin-bottom: 30px;
+  }
+  .btnAdotarPet:hover{
+    box-shadow: rgba(140, 31, 51, 0.469) 0px 7px 29px 0px;
+    transition: box-shadow 0.22s ease, transform 0.22s ease;
+    transform: translateY(-2px);
+  }
+  .infoPet{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 20px 0px 20px;
+  }
+
+
+  
+  @media (max-width: 1200px){
+    .cardPet{ flex-basis: calc((100% - 40px) / 3); } 
+  }
+  @media (max-width: 900px){
+    .cardPet{ flex-basis: calc((100% - 20px) / 2); } 
+  }
+  @media (max-width: 600px){
+    .cardPet{ flex-basis: 100%; }                    
+  }
+
 /* Responsivo */
 @media (max-width: 768px) {
   .slide {
