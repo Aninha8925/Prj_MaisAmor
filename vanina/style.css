@@ -88,6 +88,7 @@
   }
 }
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body {
     font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -139,7 +140,7 @@ nav a:hover {
     
 }
 
-#transparencia h2 {
+#transparencia #transparencia h2 {
     text-align: center;
 }
 
@@ -205,7 +206,7 @@ main .qr-code-container{
     color: green;
 }
 
-#transparencia input[type="range"]{
+#transparencia #transparencia input[type="range"]{
     pointer-events: none;
     touch-action: none; 
     width: 100%;
@@ -217,7 +218,7 @@ main .qr-code-container{
     text-align: center;
 }
 
- section{
+#transparencia  section{
     border: 2px solid #000;
     padding: 6px;
     width: 40%;
@@ -233,23 +234,23 @@ main .qr-code-container{
 }
 
 
-#transparencia .feed{
+#transparencia #transparencia .feed{
     accent-color: #ff0000;
 }   
 
-#transparencia .medcare{
+#transparencia #transparencia .medcare{
     accent-color: #b75727;
 }
 
-#transparencia .program{
+#transparencia #transparencia .program{
     accent-color: #039622;
 }
 
-#transparencia .adm{
+#transparencia #transparencia .adm{
     accent-color: #8c00af;
 }
 
-#transparencia .info-graphic{
+#transparencia #transparencia .info-graphic{
     display: flex;
     justify-content: space-between;
     margin-right: 30%;
@@ -257,16 +258,16 @@ main .qr-code-container{
     text-align: center;
 }
 
-#transparencia input[type="range"]::-moz-range-thumb{
+#transparencia #transparencia input[type="range"]::-moz-range-thumb{
     visibility: hidden;
 }
 
-#transparencia input[type="range"]::-webkit-slider-thumb{
+#transparencia #transparencia input[type="range"]::-webkit-slider-thumb{
     visibility: hidden;
     
 }
 
-#transparencia .donates{
+#transparencia #transparencia .donates{
     width: 17%;
     margin: 10px 0 0 18px;
     text-align: center;
@@ -274,9 +275,335 @@ main .qr-code-container{
 
 
 
-#transparencia #donates{
+#transparencia #transparencia #donates{
     display: flex
 }
+
+
+
+#transparencia .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+
+
+
+footer {
+    font-size: 20px;
+  justify-content: center; 
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  padding: 80px;
+  background-color: #E9E9E9;
+  margin: 30px;
+}
+
+footer #historyCard {
+    background-color: #E9E9E9;
+    border-radius: 20px;
+    padding: 80px;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 60px;
+}
+
+footer #display {
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+align-items: flex-start;
+gap: 20px;
+}
+footer #display img, 
+#imageCatWhite {
+    display: block;
+    align-self: flex-start;
+    height: auto;
+}
+
+ footer #display p,
+#text1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+footer #img2 {
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+align-items: flex-start;
+gap: 20px;
+}
+
+
+
+footer #text2 {
+    padding:0%;
+    margin:0%;
+}
+
+footer #imageGrayCat {
+    display: block;
+    align-self: flex-end;
+    height: auto;
+}
+
+footer .redColor {
+    color: #8C1F33;
+}
+
+
+
+footer .flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 370px;
+    margin-top: -250;
+    width: 100%
+}
+
+
+footer .spaceIn {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer #space {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .icons { 
+    display: flex;
+    gap: 8px;
+}
+
+footer #upBar{
+    margin: -8px 0px -80px 0px;
+    border-top: 1px solid #C6C6C6;
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer #contact{
+    margin-top: -72px;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer ul{
+    text-align: left;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 40px;
+    
+}
+
+
+footer .flex2 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 370px;
+    margin-top: -250px;
+    width: 100%
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+   
+}
+
+footer li {
+     margin-bottom: 25px;
+}
+
+
+
+
+#transparencia .material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+
+
+
+
+
+footer {
+    font-size: 20px;
+  justify-content: center; 
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  border-radius: 20px;
+  padding: 80px;
+  background-color: #E9E9E9;
+  margin: 30px;
+}
+
+footer #historyCard {
+    background-color: #E9E9E9;
+    border-radius: 20px;
+    padding: 80px;
+}
+
+footer h2 {
+    text-align: center;
+    font-size: 60px;
+}
+
+footer #display {
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+align-items: flex-start;
+gap: 20px;
+}
+footer #display img, 
+#imageCatWhite {
+    display: block;
+    align-self: flex-start;
+    height: auto;
+}
+
+ footer #display p,
+#text1 {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+footer #img2 {
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+align-items: flex-start;
+gap: 20px;
+}
+
+
+
+footer #text2 {
+    padding:0%;
+    margin:0%;
+}
+
+footer #imageGrayCat {
+    display: block;
+    align-self: flex-end;
+    height: auto;
+}
+
+footer .redColor {
+    color: #8C1F33;
+}
+
+
+
+footer .flex {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 370px;
+    margin-top: -250;
+    width: 100%
+}
+
+
+footer .spaceIn {
+    display: flex;
+    gap: 20px; 
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer #space {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .icons { 
+    display: flex;
+    gap: 8px;
+}
+
+footer #upBar{
+    margin: -8px 0px -80px 0px;
+    border-top: 1px solid #C6C6C6;
+    display: flex;
+    justify-content: center;
+    
+}
+
+footer #contact{
+    margin-top: -72px;
+    text-align: left;
+    padding-left: 0;
+}
+
+footer ul{
+    text-align: left;
+    padding-left: 0;
+    list-style: none;
+    margin-bottom: 40px;
+    
+}
+
+
+footer .flex2 {
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 370px;
+    margin-top: -250px;
+    width: 100%
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+   
+}
+
+footer li {
+     margin-bottom: 25px;
+}
+
 
 .transparencia{
   width: min(900px, 90vw);
